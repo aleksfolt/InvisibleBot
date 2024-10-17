@@ -3,6 +3,7 @@ from aiogram.types import CallbackQuery
 
 from database.vip import add_or_update_subscription
 from kb import buy_kb, payment
+import config
 
 from aiocryptopay import AioCryptoPay, Networks
 
