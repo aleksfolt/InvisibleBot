@@ -13,7 +13,7 @@ class Subscription(Base):
     user_id = Column(BigInteger, unique=True, nullable=False)
     subscription_end = Column(BigInteger, nullable=False)
 
-DATABASE_URL = "postgresql+asyncpg://folt:passwordQ@localhost:5438/database"
+DATABASE_URL = "postgresql+asyncpg://inv:passwordQ@localhost:5438/database"
 
 async_engine = create_async_engine(DATABASE_URL, echo=True)
 
