@@ -6,7 +6,7 @@ from kb import buy_kb, payment
 
 from aiocryptopay import AioCryptoPay, Networks
 
-crypto = AioCryptoPay(token='15314:AA11PvpdsOCl2WgpSpeqvfQohuaSETFCJEa', network=Networks.TEST_NET)
+crypto = AioCryptoPay(token=config.AIO_TOKEN, network=Networks.MAIN_NET)
 
 vip_router = Router()
 
